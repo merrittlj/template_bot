@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling", "pynput", "pyautogui"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mlb_bot"
+version = "1.0"
+authors = [
+  { name="Lucas Merritt", email="merrittlj@protonmail.com" },
+]
+description = "A bot for MLB derby."
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: POSIX :: Linux",
+]
+
+[project.urls]
+Homepage = "https://github.com/merrittlj/mlb_bot"
+Issues = "https://github.com/merrittlj/mlb_bot/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mlb_bot"]
